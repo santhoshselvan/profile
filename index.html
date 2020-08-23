@@ -131,24 +131,30 @@
 </head>
 
 <body>
+<script>
+    function sendGa(event) {
+      gtag('event', 'click', {'event_category' : 'button',
+        'event_label' : event.target.href});
+    }
+</script>
 <div class="header">
     <div class="name">Santhosh <br>Thamaraiselvan</div>
 </div>
 <div class="content">
     <div class="group">
         <a class="group-name">Apps I made</a>
-        <a class="button" target="_blank" href="https://planmybinge.com/">Plan my Binge</a>
+        <a class="button" target="_blank" id="Binge" onclick="sendGa(event)" href="https://planmybinge.com/">Plan my Binge</a>
     </div>
 
     <div class="group">
         <a class="group-name">Social</a>
-        <a class="button" id="Facebook" target="_blank" href="https://www.facebook.com/thamarai.santhosh">Facebook</a>
-        <a class="button" id="Twitter" target="_blank" href="https://twitter.com/_tsanthosh">Twitter</a>
-        <a class="button" id="Instagram" target="_blank" href="https://www.instagram.com/_tsanthosh">Instagram</a>
-        <a class="button" id="GitHub" target="_blank" href="https://github.com/santhoshselvan">GitHub</a>
-        <a class="button" id="Spotify" target="_blank" href="https://open.spotify.com/user/1ra0tmvm2954ylpvllpsbwul4">Spotify</a>
-        <a class="button" id="YouTube" target="_blank" href="https://www.youtube.com/channel/UC5157ZWDeHNQjwfMax-gMDg">YouTube</a>
-        <a class="button" id="LetterBoxd" target="_blank" href="https://letterboxd.com/tsanthosh">LetterBoxd</a>
+        <a class="button" onclick="sendGa(event)" id="Facebook" target="_blank" href="https://www.facebook.com/thamarai.santhosh">Facebook</a>
+        <a class="button" onclick="sendGa(event)" id="Twitter" target="_blank" href="https://twitter.com/_tsanthosh">Twitter</a>
+        <a class="button" onclick="sendGa(event)" id="Instagram" target="_blank" href="https://www.instagram.com/_tsanthosh">Instagram</a>
+        <a class="button" onclick="sendGa(event)" id="GitHub" target="_blank" href="https://github.com/santhoshselvan">GitHub</a>
+        <a class="button" onclick="sendGa(event)" id="Spotify" target="_blank" href="https://open.spotify.com/user/1ra0tmvm2954ylpvllpsbwul4">Spotify</a>
+        <a class="button" onclick="sendGa(event)" id="YouTube" target="_blank" href="https://www.youtube.com/channel/UC5157ZWDeHNQjwfMax-gMDg">YouTube</a>
+        <a class="button" onclick="sendGa(event)" id="LetterBoxd" target="_blank" href="https://letterboxd.com/tsanthosh">LetterBoxd</a>
     </div>
 
 </div>
