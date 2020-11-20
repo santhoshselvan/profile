@@ -14,7 +14,11 @@
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-166890476-2"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
+
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+
       gtag('js', new Date());
 
       gtag('config', 'UA-166890476-2', {
@@ -132,10 +136,12 @@
 
 <body>
 <script>
-    function sendGa(event) {
-      gtag('event', 'click', {'event_category' : 'button',
-        'event_label' : event.target.href});
-    }
+  function sendGa(event) {
+    gtag('event', 'click', {
+      'event_category': 'button',
+      'event_label': event.target.href
+    });
+  }
 </script>
 <div class="header">
     <div class="name">Santhosh <br>Thamaraiselvan</div>
@@ -143,20 +149,30 @@
 <div class="content">
     <div class="group">
         <a class="group-name">Apps I made</a>
-        <a class="button" target="_blank" id="Binge" onclick="sendGa(event)" href="https://planmybinge.com/">Plan my Binge</a>
+        <a class="button" target="_blank" id="Binge" onclick="sendGa(event)" href="https://planmybinge.com/">Plan my
+            Binge</a>
+        <a class="button" target="_blank" id="Binge Android" onclick="sendGa(event)" href="https://play.google.com/store/apps/details?id=com.planmybinge">Plan my
+            Binge (Android) </a>
     </div>
 
     <div class="group">
         <a class="group-name">Social</a>
-        <a class="button" onclick="sendGa(event)" id="LinkedIn" target="_blank" href="https://www.linkedin.com/in/thamarai-santhosh">LinkedIn</a>
-        <a class="button" onclick="sendGa(event)" id="Facebook" target="_blank" href="https://www.facebook.com/thamarai.santhosh">Facebook</a>
+        <a class="button" onclick="sendGa(event)" id="LinkedIn" target="_blank"
+           href="https://www.linkedin.com/in/thamarai-santhosh">LinkedIn</a>
+        <a class="button" onclick="sendGa(event)" id="Facebook" target="_blank"
+           href="https://www.facebook.com/thamarai.santhosh">Facebook</a>
         <a class="button" onclick="sendGa(event)" id="Twitter" target="_blank" href="https://twitter.com/_tsanthosh">Twitter</a>
-        <a class="button" onclick="sendGa(event)" id="Instagram" target="_blank" href="https://www.instagram.com/_tsanthosh">Instagram</a>
+        <a class="button" onclick="sendGa(event)" id="Instagram" target="_blank"
+           href="https://www.instagram.com/_tsanthosh">Instagram</a>
         <a class="button" onclick="sendGa(event)" id="GitHub" target="_blank" href="https://github.com/santhoshselvan">GitHub</a>
-        <a class="button" onclick="sendGa(event)" id="Spotify" target="_blank" href="https://open.spotify.com/user/1ra0tmvm2954ylpvllpsbwul4">Spotify</a>
-        <a class="button" onclick="sendGa(event)" id="YouTube" target="_blank" href="https://www.youtube.com/channel/UC5157ZWDeHNQjwfMax-gMDg">YouTube</a>
-        <a class="button" onclick="sendGa(event)" id="LetterBoxd" target="_blank" href="https://letterboxd.com/tsanthosh">LetterBoxd</a>
-        <a class="button" onclick="sendGa(event)" id="TraktTV" target="_blank" href="https://trakt.tv/users/tsanthosh/history">Trakt TV</a>
+        <a class="button" onclick="sendGa(event)" id="Spotify" target="_blank"
+           href="https://open.spotify.com/user/1ra0tmvm2954ylpvllpsbwul4">Spotify</a>
+        <a class="button" onclick="sendGa(event)" id="YouTube" target="_blank"
+           href="https://www.youtube.com/channel/UC5157ZWDeHNQjwfMax-gMDg">YouTube</a>
+        <a class="button" onclick="sendGa(event)" id="LetterBoxd" target="_blank"
+           href="https://letterboxd.com/tsanthosh">LetterBoxd</a>
+        <a class="button" onclick="sendGa(event)" id="TraktTV" target="_blank"
+           href="https://trakt.tv/users/tsanthosh/history">Trakt TV</a>
     </div>
 
 </div>
